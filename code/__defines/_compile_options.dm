@@ -10,6 +10,9 @@
 // ZAS Compile Options
 //#define ZASDBG	 	// Uncomment to turn on super detailed ZAS debugging that probably won't even compile.
 #define MULTIZAS		// Uncomment to turn on Multi-Z ZAS Support!
+#if UNIT_TEST
+	#define ZAS_ACTIVE_ZONE_DEBUG  // detailed debug information for zones active in pre-game
+#endif
 
 // Comment/Uncomment this to turn off/on shuttle code debugging logs
 #define DEBUG_SHUTTLES
